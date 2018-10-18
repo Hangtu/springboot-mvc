@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: hello.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.369 s <<< FAILURE! - in hello.ApplicationTest
+homePage(hello.ApplicationTest)  Time elapsed: 0.208 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "Get your greeting"
+     but: was "<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Hola, este es mi nuevo contenido</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>get click Hang Tu <a href="/hello-world"> Here is the url</a></p>
+</body>
+</html>
+"
+	at hello.ApplicationTest.homePage(ApplicationTest.java:41)
+
+greetingWithUser(hello.ApplicationTest)  Time elapsed: 0.039 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "Hello, Greg!"
+     but: was ""
+	at hello.ApplicationTest.greetingWithUser(ApplicationTest.java:53)
+
+greeting(hello.ApplicationTest)  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "Hello, World!"
+     but: was ""
+	at hello.ApplicationTest.greeting(ApplicationTest.java:47)
+
